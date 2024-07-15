@@ -1,0 +1,367 @@
+Conceitos Básicos de Engenharia de dados:
+https://medium.com/@mudrapatel17/data-engineering-concepts-part-1-data-modeling-cb6fcf1da42d (Parte 1)
+https://medium.com/@mudrapatel17/data-engineering-concepts-part-2-data-warehousing-502320c1c79d (Parte 2)
+https://medium.com/@mudrapatel17/data-engineering-concepts-part-3-data-quality-and-governance-d550ca7e04fe (Parte 3)
+https://medium.com/@mudrapatel17/data-engineering-concepts-part-4-data-pipelines-c2af9211529d (Parte 4)
+https://medium.com/@mudrapatel17/data-engineering-concepts-part-5-data-orchestration-b0031f33bffe (Parte 5)
+https://medium.com/@mudrapatel17/data-engineering-concepts-part-6-batch-processing-with-spark-8b302a4d3c3d (Parte 6)
+https://medium.com/@mudrapatel17/data-engineering-concepts-part-7-devops-dataops-and-mlops-afc6f432473c (Parte 7)
+https://medium.com/@mudrapatel17/data-engineering-concepts-part-8-data-architecture-28104ec41690 (Parte 8)
+https://towardsdatascience.com/building-a-data-platform-in-2024-d63c736cccef 
+	Data Quality
+		https://blog.det.life/mastering-data-quality-10-essential-checks-with-real-world-examples-and-7-best-practices-fa303f2ae42b#:~:text=In%20the%20world%20of%20data,set%20of%20data%20quality%20checks.
+		https://airbyte.com/data-engineering-resources/data-quality
+		https://arismuhandisin.medium.com/best-practices-for-data-quality-in-the-2024-era-of-data-engineering-1f172f8b5724
+		https://www.datafold.com/blog/data-quality-in-data-engineering-workflows
+		https://www.montecarlodata.com/blog-data-quality-checks-in-etl/
+		https://towardsdatascience.com/which-team-should-own-data-quality-44f1d6996eb8
+
+GCP
+Simulados para a certificação
+https://www.examtopics.com/exams/google/professional-data-engineer/view/
+Cursos 
+https://www.pluralsight.com/cloud-guru/courses/google-certified-professional-data-engineer
+
+Guia de quem tirou a certificação
+https://medium.com/@manojkumar.vadivel/2024-new-google-professional-data-engineer-certification-exam-guide-0cf63622a4d1
+https://servian.dev/google-cloud-data-engineer-exam-study-guide-9afc80be2ee3
+https://medium.com/@juacy987/como-eu-passei-na-certifica%C3%A7%C3%A3o-professional-data-engineer-do-google-cloud-platform-2f91815dafda
+	Anotações de outras pessoas
+		https://github.com/sathishvj/awesome-gcp-certifications/blob/master/professional-data-engineer.md
+		https://sathishvj.medium.com/notes-from-my-google-cloud-professional-data-engineer-exam-530d11966aa0
+		https://medium.com/@habibbueteee/how-i-prepared-for-the-google-cloud-professional-data-engineer-certification-exam-november-2023-c434aa2e8920
+		https://gist.github.com/costrouc/d9db5f6f81779418842bb0df580a11ca#file-data-engineer-exam-notes-org
+
+
+Overview das ferramentas
+https://lucid.app/lucidchart/0ca44a63-4ea4-4d78-8367-2465512d21be/view?page=5CetVcvv3YSZ#
+https://raw.githubusercontent.com/ml874/Data-Engineering-on-GCP-Cheatsheet/master/Screenshots/screenshot1.png
+
+Ovweview e Regiões e zonas
+https://cloud.google.com/compute/docs/regions-zones?hl=pt-br
+https://cloud.google.com/compute/docs/regions-zones/global-regional-zonal-resources?hl=pt-br
+https://cloud.google.com/compute/docs/regions-zones/zone-virtualization?hl=pt-br
+https://cloud.google.com/docs/overview?hl=pt-br
+
+
+Cloud IAM
+https://cloud.google.com/policy-intelligence/docs/iam-simulator-overview?hl=pt-br
+https://cloud.google.com/iam/docs/overview?hl=pt-br
+https://cloud.google.com/iam/docs/understanding-roles#predefined_roles
+https://cloud.google.com/iam/docs/resource-hierarchy-access-control?hl=pt-br
+https://cloud.google.com/iam/docs/granting-changing-revoking-access?hl=pt-br
+https://cloud.google.com/iam/docs/best-practices-service-accounts?hl=pt-br#manage-like-a-resource
+https://en.wikipedia.org/wiki/Principle_of_least_privilege
+https://cloud.google.com/iam/docs/using-iam-securely?hl=pt-br
+https://cloud.google.com/iam/docs/best-practices-for-using-service-accounts-in-deployment-pipelines?hl=pt-br
+https://cloud.google.com/resource-manager/docs/creating-managing-projects?hl=pt-br
+https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy?hl=pt-br
+https://cloud.google.com/iam/docs/best-practices-service-accounts?hl=pt-br#identify-unused-accounts
+https://cloud.google.com/iam/docs/service-account-overview?hl=pt-br
+	Contas de serviços
+		https://medium.com/google-cloud-brasil/entendendo-e-usando-contas-de-servi%C3%A7o-no-google-cloud-31236d770188
+	Boas praticas para contas de serviços
+		https://cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys?hl=pt-br (EX.: rotação de chave)
+
+Arquiteturas 
+https://cloud.google.com/architecture?hl=pt-br
+https://cloud.google.com/architecture/regional-deployment-compute-engine?hl=pt-br
+https://dl.acm.org/doi/10.1145/3498336
+https://cloud.google.com/architecture/framework/system-design/archetypes?hl=pt-br
+https://cloud.google.com/architecture/infra-reliability-guide?hl=pt-br
+	Arquitetura de redundância
+		https://cloud.google.com/architecture/disaster-recovery?hl=pt-br
+	Arquitetura Data mesh
+		https://premvishnoi.medium.com/modern-architecture-for-merging-data-infrastructures-8223a6dda911
+		https://aws.amazon.com/pt/blogs/industries/how-to-create-a-modern-cpg-data-architecture-with-data-mesh/
+		https://kb.ufla.br/books/termos-e-definicoes-governanca-de-dados/page/etl
+		https://medium.com/geekculture/building-a-data-lake-and-warehouse-on-gcp-5d49a0f5a592
+		https://towardsdatascience.com/data-mesh-the-balancing-act-of-centralization-and-decentralization-f5dc0bb54bcf
+		https://learn.microsoft.com/pt-br/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-mesh-scenario
+		https://medium.com/data-hackers/data-mesh-indo-al%C3%A9m-do-data-lake-e-data-warehouse-465d57539d89
+		https://aws.amazon.com/pt/what-is/data-mesh/
+		Data Mesh GCP
+			https://cloud.google.com/architecture/design-self-service-data-platform-data-mesh?hl=pt-br
+			https://cloud.google.com/architecture/big-data-analytics/data-warehouse?hl=pt-br
+	Ferramenta para desenhar arquitetura no GCP
+		https://googlecloudcheatsheet.withgoogle.com/architecture
+
+Segurança
+https://medium.com/google-cloud/google-cloud-platform-security-checklist-5f57fe8eb761 (part 1, 2,3,4,5,6 no corpo do texto)
+https://brunaluz-11690.medium.com/criptografia-sim%C3%A9trica-e-assim%C3%A9trica-vantagens-e-desvantagens-38e614d201eb
+https://www.diegomacedo.com.br/chaves-simetricas-assimetricas/#google_vignette
+https://www.4future.com.br/index.php/2021/10/11/criptografia-chaves-simetricas-e-assimetricas/
+https://cloud.google.com/docs/security/encryption/default-encryption?hl=pt-br
+https://cloud.google.com/docs/security/encryption-in-transit?hl=pt-br
+
+
+Gatilhos(Triggers)
+https://cloud.google.com/functions/docs/calling/storage?hl=pt-br
+https://001-dharmendra.medium.com/load-csv-data-into-big-query-via-gcs-bucket-cloud-functions-using-cloud-shell-cf80829beddb
+https://medium.com/nerd-for-tech/ingest-data-from-gcs-to-bq-using-cloud-functions-abaca92514bf
+https://001-dharmendra.medium.com/load-csv-data-into-big-query-via-gcs-bucket-cloud-functions-using-cloud-shell-cf80829beddb
+https://gist.githubusercontent.com/mkahn5/5d2d569209f39f72d089a68d767de57b/raw/19f4440bf2e8ee2f22b3ca757591b007d7975672/main.py
+
+
+Formato/tipo dos dados
+https://medium.com/rescuepoint/tipos-de-dados-em-bigdata-6ab0debec30a
+https://oswinrh.medium.com/parquet-avro-or-orc-47b4802b4bcb
+	Benchmarking de ferramentas
+		https://duckdblabs.github.io/db-benchmark/
+		https://pola.rs/posts/benchmarks/
+		https://docs.coiled.io/blog/tpch.html
+	Tipo de formato:
+	- CSV
+		https://rockcontent.com/br/blog/csv/
+		https://pt.wikipedia.org/wiki/Comma-separated_values
+		https://rockcontent.com/br/blog/csv/
+		https://support.google.com/google-ads/answer/9004364?hl=pt-BR
+	- Json
+		https://pt.wikipedia.org/wiki/JSON
+		https://www.json.org/json-pt.html
+		https://www.crockford.com/mckeeman.html
+	- Avro
+		https://en.wikipedia.org/wiki/Apache_Avro
+		https://avro.apache.org/docs/#introduction
+		https://oswinrh.medium.com/parquet-avro-or-orc-47b4802b4bcb
+		https://www.astera.com/pt/type/blog/avro-vs-parquet-is-one-better-than-the-other/
+	- ORC
+		https://cwiki.apache.org/confluence/display/Hive/LanguageManual+ORC
+		https://www.datanami.com/2018/05/16/big-data-file-formats-demystified/
+		https://community.cloudera.com/t5/Support-Questions/Between-Avro-Parquet-and-RC-ORC-which-is-useful-for/td-p/222271
+	- Iceberg
+		https://medium.com/@habbema/apache-iceberg-acb81fcc3f34
+		https://cloud.google.com/dataproc-metastore/docs/apache-iceberg?hl=pt-br
+		https://aws.amazon.com/pt/what-is/apache-iceberg/
+		https://medium.com/@larissauro/o-que-%C3%A9-apache-iceberg-2fb366b5315
+		https://pt.linkedin.com/pulse/apache-iceberg-uma-nova-abordagem-para-seu-datalake-demetrius-mata-eqz1f
+		https://www.dremio.com/blog/the-life-of-a-read-query-for-apache-iceberg-tables/
+	- Delta
+	- Parquet
+		https://www.alura.com.br/artigos/arquivos-parquet#:~:text=O%20Parquet%20tem%20uma%20organiza%C3%A7%C3%A3o,um%20ao%20lado%20do%20outro.
+		https://en.wikipedia.org/wiki/Apache_Parquet
+		https://www.databricks.com/br/glossary/what-is-parquet
+		https://butecotecnologico.com.br/apache-parquet-explicado/
+
+Streaming utilizando Avro no GCP
+https://cloud.google.com/architecture/streaming-avro-records-into-bigquery-using-dataflow?hl=pt-br
+
+Boa praticas custos
+https://cloud.google.com/architecture/framework/cost-optimization/monitor?hl=pt-br
+https://cloud.google.com/architecture/framework/cost-optimization/storage?hl=pt-br
+https://cloud.google.com/architecture/framework/performance-optimization?hl=pt-br
+https://cloud.google.com/products/calculator/?hl=pt_br#id=e219563d-f25c-46b9-a468-264a93f18dba
+
+Cases Data lake
+https://medium.com/google-cloud/designing-a-data-lake-on-gcp-with-data-fusion-and-composer-e2ea0a753525
+https://www.kdnuggets.com/2015/09/data-lake-vs-data-warehouse-key-differences.html
+https://pt.linkedin.com/pulse/bigquery-como-data-lake-tiago-navarro
+
+Data Modeling/DW
+https://panoply.io/data-warehouse-guide/data-warehouse-architecture-traditional-vs-cloud/
+	Inmon design 
+	
+	Kimball design 
+	
+Segurança de Cloud SQL
+https://cloud.google.com/architecture/example-architecture-dlp-proxy-query-database-sensitive-data?hl=pt-br
+
+Big query
+https://cloud.google.com/blog/topics/developers-practitioners/bigquery-admin-reference-guide-resource-hierarchy
+https://cloud.google.com/bigquery/docs/clustered-tables?utm_source=youtube&utm_medium=unpaidsoc&utm_campaign=CDR_ret_databases_0hd23gnz1be_BigQuerySpotlight_071921&utm_content=description&hl=pt-br
+https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy?hl=pt-br#projects
+https://cloud.google.com/bigquery/docs/authorized-views?hl=pt-br
+https://cloud.google.com/bigquery/docs/slots?hl=pt-br
+https://cloud.google.com/blog/products/bigquery/in-memory-query-execution-in-google-bigquery?hl=en
+https://medium.com/turing-talks/google-bigquery-um-mergulho-nos-fundamentos-e-algumas-aplica%C3%A7%C3%B5es-563245f01c24
+https://medium.com/google-cloud/the-12-components-of-google-bigquery-c2b49829a7c7
+https://medium.com/google-cloud/paying-it-forward-how-bigquerys-data-ingest-breaks-tech-norms-8bfe2341f5eb
+https://medium.com/google-cloud/15-awesome-things-you-probably-didnt-know-about-google-bigquery-6654841fa2dc
+https://cloud.google.com/bigquery/docs/external-data-sources?hl=pt-br
+https://panoply.io/data-warehouse-guide/bigquery-architecture/#:~:text=BigQuery%20stores%20data%20in%20a,compression%20ratio%20and%20scan%20throughput.
+https://cloud.google.com/blog/products/bigquery/inside-capacitor-bigquerys-next-generation-columnar-storage-format
+https://www.youtube.com/playlist?list=PLIivdWyY5sqLAbIdmcMwsxWg-w8Px34MS
+https://cloud.google.com/blog/topics/developers-practitioners/bigquery-admin-reference-guide-tables-routines?utm_source=youtube&utm_medium=unpaidsoc&utm_campaign=CDR_ali_databases_v2qtthjxvzy_BigQuerySpotlight_070221&utm_content=description
+https://cloud.google.com/bigquery/docs/tables-intro?utm_source=youtube&utm_medium=unpaidsoc&utm_campaign=CDR_ali_databases_v2qtthjxvzy_BigQuerySpotlight_063021&utm_content=description&hl=pt-br
+https://cloud.google.com/bigquery/docs/external-data-sources?utm_source=youtube&utm_medium=unpaidsoc&utm_campaign=CDR_ali_databases_v2qtthjxvzy_BigQuerySpotlight_063021&utm_content=description&hl=pt-br
+https://cloud.google.com/blog/topics/developers-practitioners/bigquery-admin-reference-guide-api-landscape?utm_source=youtube&utm_medium=unpaidsoc&utm_campaign=CDR_ret_databases_cbsfjyq2cnu_BigQuerySpotlight_081821&utm_content=description
+https://panoply.io/data-warehouse-guide/bigquery-architecture/#:~:text=BigQuery%20stores%20data%20in%20a,compression%20ratio%20and%20scan%20throughput.
+	Otimização do Storage no BQ (Particionamento e Clusterização)
+		https://cloud.google.com/blog/topics/developers-practitioners/bigquery-admin-reference-guide-storage
+		https://cloud.google.com/bigquery/docs/partitioned-tables?utm_source=youtube&utm_medium=unpaidsoc&utm_campaign=CDR_ret_databases_0hd23gnz1be_BigQuerySpotlight_071921&utm_content=description&hl=pt-br
+		https://cloud.google.com/bigquery/docs/clustered-tables?utm_source=youtube&utm_medium=unpaidsoc&utm_campaign=CDR_ret_databases_0hd23gnz1be_BigQuerySpotlight_071921&utm_content=description&hl=pt-br
+	Funcionamento e do fluxo de trabalho no BQ (execução de jobs e querys)
+		https://cloud.google.com/bigquery/docs/query-overview?utm_source=youtube&utm_medium=unpaidsoc&utm_campaign=CDR_ret_databases_q9npe47o2ui_BigQuerySpotlight_072821&utm_content=description&hl=pt-br
+		https://cloud.google.com/blog/topics/developers-practitioners/bigquery-admin-reference-guide-query-processing?utm_source=youtube&utm_medium=unpaidsoc&utm_campaign=CDR_ret_databases_q9npe47o2ui_BigQuerySpotlight_072821&utm_content=description
+	Dados Lógico Vs Dados Físico
+		https://www.pcmag.com/encyclopedia/term/logical-vs-physical
+	Otimização de consultas
+		https://cloud.google.com/blog/topics/developers-practitioners/bigquery-admin-reference-guide-query-optimization?utm_source=youtube&utm_medium=unpaidsoc&utm_campaign=CDR_ret_databases_iz6lxi9bcza_BigQuerySpotlight_072921&utm_content=description
+	Monitoramento
+		https://cloud.google.com/blog/topics/developers-practitioners/bigquery-admin-reference-guide-monitoring?utm_source=youtube&utm_medium=unpaidsoc&utm_campaign=CDR_ret_databases_uy_jy02jboi_BigQuerySpotlight_082321&utm_content=description
+
+
+Pagamento e faturamento
+https://cloud.google.com/billing/docs/concepts?hl=pt-br#billing_account
+
+Storage
+https://cloud.google.com/blog/products/bigquery/separation-of-storage-and-compute-in-bigquery?hl=en
+https://www.googlecloudcommunity.com/gc/Architecture-Framework-Guidance/System-Design-Storage-Best-Practices/ta-p/178052
+https://cloud.google.com/architecture/storage-advisor?hl=pt-br
+
+Cloud Bigtable
+https://pt.wikipedia.org/wiki/BigTable
+https://cloud.google.com/bigtable/docs?hl=pt-br
+https://cloud.google.com/bigtable/docs/cbt-overview?hl=pt-br
+https://static.googleusercontent.com/media/research.google.com/pt-BR//archive/bigtable-osdi06.pdf (arquitetura do Bigtable)
+
+Migração para o GCP
+https://cloud.google.com/architecture/migration-to-gcp-getting-started?hl=pt-br
+
+Cloud Data Fusion
+https://medium.com/ipnet-growth-partner/introdu%C3%A7%C3%A3o-ao-cloud-data-fusion-e655ff1c95f9
+https://cloud.google.com/data-fusion/docs/concepts/overview?hl=pt-br
+https://medium.com/google-cloud/data-fusion-etl-on-google-cloud-platform-eb783d2c7a58
+https://cloud.google.com/blog/products/data-analytics/easier-management-for-cloud-etl-elt-pipelines
+
+Cloud Pub/Sub
+https://cloud.google.com/pubsub/docs/overview?hl=pt-br#:~:text=O%20Pub%2FSub%20%C3%A9%20um,com%20lat%C3%AAncias%20de%20100%20milissegundos.
+https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern
+https://gabriel-faraday.medium.com/google-cloud-pub-sub-o-que-%C3%A9-como-funciona-cbf70c5edb66
+https://cloud.google.com/pubsub/architecture?hl=pt-br
+https://cloud.google.com/pubsub/docs/pubsub-basics?hl=pt-br
+https://cloud.google.com/solutions/event-driven-architecture-pubsub?hl=pt-br
+https://medium.com/google-cloud/google-pub-sub-lite-for-kafka-users-dec8a7cfc5e5
+https://pt.wikipedia.org/wiki/Apache_Kafka
+https://developerexperience.io/articles/kafka
+
+Cloud Run
+https://medium.com/google-cloud-brasil/implante-seu-site-em-segundos-com-cloud-run-c7652d65f4be
+https://cloud.google.com/run/docs/overview/what-is-cloud-run?hl=pt-br
+https://cloud.google.com/run/docs/container-contract?hl=pt-br
+https://medium.com/google-cloud/deploy-serverless-container-google-cloud-run-68d716af7716
+https://github.com/steren/awesome-cloud-run
+	Kubernets ou Docker
+		https://developers-br.googleblog.com/2019/11/google-kubernetes-engine-ou-cloud-run.html
+		
+Kubernets
+https://www.site24x7.com/learn/google-kubernetes-engine.html#:~:text=GKE%20is%20a%20feature%2Drich,to%20form%20a%20Kubernetes%20cluster.
+https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview?hl=pt-br#how_works
+https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-architecture?hl=pt-br
+https://cloud.google.com/kubernetes-engine/docs/concepts/types-of-clusters?hl=pt-br
+https://www.youtube.com/watch?v=cC46cg5FFAM&list=PLIivdWyY5sqLmnGdKSdQIXq2sd_1bWSnx
+	Exemplos de utilização
+		https://medium.com/google-cloud/ci-cd-pipeline-to-deploy-applications-on-google-kubernetes-engine-gke-using-cloud-build-and-cloud-0ee982b37db6
+		https://medium.com/@gcbrandao/google-kubernetes-engine-fazendo-o-deploy-da-nossa-aplica%C3%A7%C3%A3o-no-google-gke-abfbb155aaaa
+		https://www.youtube.com/watch?v=LYcHaDDcCYo&list=PLIivdWyY5sqLmnGdKSdQIXq2sd_1bWSnx&index=5
+	Obstáculos para aplicativos escaláveis
+		https://articles.microservices.com/the-3-major-hurdles-to-scalable-applications-58dff91a6d50
+	Arquitetura monolitica x microsserviços
+		https://articles.microservices.com/monolithic-vs-microservices-architecture-5c4848858f59
+		https://en.wikipedia.org/wiki/Microservices
+		
+Cloud Dataplex
+https://cloud.google.com/dataplex/docs/introduction?hl=pt-br
+https://cloud.google.com/blog/products/data-analytics/build-a-data-mesh-on-google-cloud-with-dataplex-now-generally-available
+https://services.google.com/fh/files/misc/build-a-modern-distributed-datamesh-with-google-cloud-whitepaper.pdf
+https://www.infoworld.com/article/3692892/preview-google-cloud-dataplex-wows.html
+https://cloud.google.com/dataplex/docs/data-quality-tasks-overview?hl=pt-br
+https://medium.com/google-cloud/google-cloud-dataplex-part-1-lakes-zones-assets-and-discovery-5f288486cb2f
+https://medium.com/google-cloud/google-cloud-dataplex-part-2-dataplex-gcloud-cli-819d3c678518
+https://medium.com/@poojakhaire000/google-dataplex-creating-lakes-zones-and-assets-474d372b2ac1
+https://medium.com/@poojakhaire000/dataplex-1-an-overview-of-google-cloud-dataplex-12894f37e784
+	Descobrir
+		https://cloud.google.com/dataplex/docs/discover-data?hl=pt-br
+	Boas práticas
+		https://cloud.google.com/dataplex/docs/best-practices?hl=pt-br
+
+Rede
+https://bgiri-gcloud.medium.com/gcp-architecture-center-84618083e4cc
+https://medium.com/google-cloud/gcp-hybrid-networking-patterns-part-2-5e96a4974284
+	Cloud Virtual Networking
+		
+	Boas práticas para arquiteturas de Rede
+		https://cloud.google.com/architecture/best-practices-vpc-design?hl=pt-br
+	Cloud Load Balancing
+		https://cloud.google.com/load-balancing/docs/load-balancing-overview?hl=pt-br
+		https://cloud.google.com/load-balancing/docs/choosing-load-balancer?hl=pt-br
+		https://cloud.google.com/load-balancing/docs/https?hl=pt-br#global
+		https://cloud.google.com/load-balancing/docs/l7-internal?hl=pt-br
+		https://cloud.google.com/load-balancing/docs/https?hl=pt-br#global
+		https://cloud.google.com/load-balancing/docs/l7-internal?hl=pt-br#cross-region
+		https://cloud.google.com/load-balancing/docs/application-load-balancer?hl=pt-br
+	Cloud CDN
+		https://www.hostinger.com.br/tutoriais/o-que-e-cdn?ppc_campaign=google_search_generic_hosting_all&bidkw=defaultkeyword&lo=1001585&gad_source=1&gclid=Cj0KCQjwn7mwBhCiARIsAGoxjaKw-Wsf5Wuxnb5UxIepYGfBZhtXKr_XLgrkjvjSkZCpqgiRNdYK5JYaAly-EALw_wcB
+		https://cloud.google.com/media-cdn/docs/caching?_gl=1*gh4w9*_up*MQ..&gclid=Cj0KCQjwn7mwBhCiARIsAGoxjaJRsjG1Ug25ZN6RWjQiUJ34IDyvJdqq8XEA5uTXiATTc06ESLFWHtYaAtjvEALw_wcB&gclsrc=aw.ds
+		https://cloud.google.com/cdn/docs/overview?hl=pt-br
+		https://cloud.google.com/cdn/docs/caching?hl=pt-br#cacheability
+	Cloud DNS
+		https://cloud.google.com/dns/docs/overview?hl=pt-br
+		https://cloud.google.com/dns/docs/best-practices?hl=pt-br
+	Cloud Interconnect
+		https://cloud.google.com/network-connectivity/docs/interconnect/concepts/overview?hl=pt-br
+		https://cloud.google.com/network-connectivity/docs/interconnect/concepts/service-providers?hl=pt-br
+		https://cloud.google.com/network-connectivity/docs/interconnect/how-to/partner/provisioning-overview?hl=pt-br
+		https://stephrwong.medium.com/hybrid-networking-google-cloud-interconnect-d86780a1d905
+		https://cloud.google.com/network-connectivity/docs/interconnect/concepts/overview?hl=pt-br
+	Cloud Router
+		https://medium.com/google-cloud/dynamic-routing-with-cloud-router-9ff5c362d833
+		https://cloud.google.com/network-connectivity/docs/router/concepts/overview?hl=pt-br
+		https://bgiri-gcloud.medium.com/google-cloud-networking-part-2-0a262b226f9b
+			Border Gateway Protocol	
+				https://en.wikipedia.org/wiki/Border_Gateway_Protocol
+	Firewall Rules
+		https://stephrwong.medium.com/protect-your-google-cloud-instances-with-firewall-rules-69cce960fba
+
+
+Cloud Endpoints
+https://cloud.google.com/endpoints/docs?hl=pt-br
+https://medium.com/@gcbrandao/google-cloud-endpoints-fazendo-o-deploy-da-nossa-aplica%C3%A7%C3%A3o-usando-cloud-endpoints-e-cloud-app-41bfdc4d6e5d
+https://cloud.google.com/endpoints/docs/openapi/how-to?hl=pt-br
+https://medium.com/@pulkit.gigoo18/cloud-endpoints-cceddb516567
+
+Cloud KMS
+https://cloud.google.com/kms/docs/cmek?hl=pt-br
+https://cloud.google.com/kms/docs/ekm?hl=pt-br
+https://cloud.google.com/docs/security/key-management-deep-dive?hl=pt-br
+https://cloud.google.com/kms/docs/rotate-key?hl=pt-br
+https://cloud.google.com/kms/docs/key-import?hl=pt-br
+https://www.freecodecamp.org/news/securing-managing-secrets-using-google-cloud-kms-3fe08c69f499/
+https://jryancanty.medium.com/kms-fundamentals-for-enterprises-moving-to-the-cloud-part-1-74ebf20c26d7
+https://jryancanty.medium.com/cloud-kms-fundamentals-for-enterprise-part-2-74406b73f2c2
+	Rotação de Chave
+		https://cloud.google.com/kms/docs/rotate-key?hl=pt-br
+		
+Cloud Identity Aware Proxy
+https://cloud.google.com/blog/topics/developers-practitioners/control-access-your-web-sites-identity-aware-proxy
+https://www.seblu.de/2021/12/iap-bypass.html
+https://medium.com/google-cloud/using-google-cloud-identity-aware-proxy-with-compute-engine-cf2b7dc9136b
+
+Cloud Operations Suite | Stackdriver
+https://k21academy.com/google-cloud/google-cloud-operations-suite-stackdriver/
+https://www.youtube.com/watch?v=VL2Ql0cmo4g
+https://cloud.google.com/blog/products/management-tools/observability-on-google-cloud
+
+Arquitetura MLOps GCP
+https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning?hl=pt-br
+https://medium.com/google-cloud/mlops-productionising-ml-models-at-google-scale-e78949c20e0a
+https://bgiri-gcloud.medium.com/automating-your-ml-journey-with-mlops-level-1-ml-pipeline-automation-dcaaad49a8d0
+https://bgiri-gcloud.medium.com/gcp-provides-various-network-connectivity-options-to-connect-from-on-premise-data-centers-or-c6570734eb48
+
+Organizar links:
+https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-avro?hl=pt-br
+https://medium.com/google-cloud/bigquery-explained-data-ingestion-cdc26a588d0
+https://cloud.google.com/bigquery/docs/loading-data?hl=pt-br#:~:text=Stream%20data%20using%20Storage%20Write%20API,-Suppose%20that%20there&text=Events%20are%20generated%20continuously%20and,to%20ingest%20data%20into%20BigQuery.
+https://cloud.google.com/bigquery/docs/reference/bq-cli-reference?hl=pt-br#bq_load
+https://airflow.apache.org/docs/apache-airflow-providers-google/stable/operators/transfer/gcs_to_bigquery.html
+https://medium.com/towards-data-engineering/a-guide-to-effectively-integrate-dbt-with-airflow-e42ef634610c
+https://medium.com/snowflake/using-astronomers-new-cosmos-to-deploy-dbt-pipelines-onto-snowflake-2e211e84690
+https://github.com/astronomer/astronomer-cosmos
+https://cloud.google.com/architecture/build-a-data-lake-on-gcp?hl=pt-br
+https://cloud.google.com/storage/docs/storage-classes?hl=pt-br
+https://cloud.google.com/blog/topics/developers-practitioners/bigquery-explained-data-ingestion
+https://medium.com/google-cloud/bigquery-explained-data-ingestion-cdc26a588d0
+https://codelabs.developers.google.com/codelabs/bigquery-cli#4
+https://medium.com/data-nuggets/11-basic-bigquery-bq-commands-for-data-interaction-59e0d7cee84c
+https://cloud.google.com/bigquery/docs/reference/bq-cli-reference?hl=pt-br#bq_load
+https://docs.pola.rs/user-guide/misc/comparison/
